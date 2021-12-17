@@ -1,0 +1,37 @@
+
+<html>
+<body>
+
+<p id="one"></p>
+<p id="two"></p>
+<p id="three"></p>
+
+<script>
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+const student ={
+   name:"mounika",
+   surname:"musham",
+   id:1234,
+   branch:"ECE",
+   college:"NITS",
+
+   fullName : function() {
+    return this.name + " " + this.surname;
+
+  }
+};
+
+document.getElementById("one").innerHTML = student.fullName();
+document.getElementById("two").innerHTML = person.fullName();
+</script>
+
+</body>
+</html>
